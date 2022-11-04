@@ -5,12 +5,16 @@ import personnage.Yakuza;
 
 public class HistoireTP4 {
 	public static void main(String[] args) {
-
-		Ronin roro = new Ronin("Roro", "shoshu", 60);
-		Commercant marco = new Commercant("Marco", 20);
-		roro.direBonjour();
-		roro.donner(marco);
+		Ronin roro = new Ronin("Roro", "shoshu", 54);
+		Yakuza yakuLeNoir = new Yakuza("Yaku Le Noir", "Whisky", 45 , "Warsong");
+		roro.provoquer(yakuLeNoir);
 		
+//______________________________________________________ quatrieme test
+//		Ronin roro = new Ronin("Roro", "shoshu", 60);
+//		Commercant marco = new Commercant("Marco", 20);
+//		roro.direBonjour();
+//		roro.donner(marco);
+//		
 //______________________________________________________ troisieme test		
 //		Commercant marco = new Commercant("Marco", 15);
 //		Yakuza yakuLeNoir = new Yakuza("Yaku Le Noir", "Whisky", 30 , "Warsong");
