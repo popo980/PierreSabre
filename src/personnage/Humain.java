@@ -1,9 +1,9 @@
 package personnage;
 
 public class Humain {
-	private String nom;
 	private String boissonPref;
 	private int qttArgent;
+	private String nom;
 	
 	public Humain(String nom, String boissonPref, int qttArgent) {
 		this.nom = nom;
@@ -11,19 +11,31 @@ public class Humain {
 		this.qttArgent = qttArgent;
 	}
 	
-	private void parler(String texte) {
+	protected void parler(String texte) {
 		System.out.println('('+this.nom+") - "+ texte);
 	}
 	
+	public String getBoissonPref() {
+		return boissonPref;
+	}
 	public String getNom() {
 		return nom;
 	}
 	public int getQttArgent() {
 		return qttArgent;
 	}
+	public void setBoissonPref(String boissonPref) {
+		this.boissonPref = boissonPref;
+	}
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+	public void setQttArgent(int qttArgent) {
+		this.qttArgent = qttArgent;
+	}
 	
 	public void direBonjour() {
-		parler("Bonjour, je m'appelle "+ this.nom + "et j'aime boire du "+this.boissonPref);
+		parler("Bonjour, je m'appelle "+ this.nom + " et j'aime boire du "+this.boissonPref);
 	}
 	
 	public void boire() {
