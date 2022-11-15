@@ -8,6 +8,10 @@ public class Ronin extends Humain{
 		this.honneur = 1;
 	}
 	
+	public int getHonneur() {
+		return honneur;
+	}
+	
 	public void donner(Commercant beneficiaire) {
 		int sommeADonner = getQttArgent()/10;
 		this.parler(beneficiaire.getNom() +" prend ces "+ sommeADonner + " sous.");
