@@ -5,30 +5,24 @@ import personnage.Yakuza;
 
 public class HistoireTP4 {
 	public static void main(String[] args) {
-		Ronin roro = new Ronin("Roro", "shoshu", 54);
-		Yakuza yakuLeNoir = new Yakuza("Yaku Le Noir", "Whisky", 45 , "Warsong");
-		roro.provoquer(yakuLeNoir);
+		Commercant marco = new Commercant("Marco", 20);
+		Ronin roro = new Ronin("Roro", "shoshu", 60);
+		Yakuza yakuLeNoir = new Yakuza("Yaku Le Noir", "Whisky", 30 , "Warsong");
+
+		marco.direBonjour();
+		marco.seFaireExtorquer();
+		marco.recevoir(15);
+		marco.boire();
 		
-//______________________________________________________ quatrieme test
-//		Ronin roro = new Ronin("Roro", "shoshu", 60);
-//		Commercant marco = new Commercant("Marco", 20);
-//		roro.direBonjour();
-//		roro.donner(marco);
-//		
-//______________________________________________________ troisieme test		
-//		Commercant marco = new Commercant("Marco", 15);
-//		Yakuza yakuLeNoir = new Yakuza("Yaku Le Noir", "Whisky", 30 , "Warsong");
-//		yakuLeNoir.direBonjour();
-//		yakuLeNoir.extorquer(marco);
-//		
-//		
-//______________________________________________________ deuxieme test		
-//		Commercant marco = new Commercant("Marco", 20);
-//		marco.direBonjour();
-//		marco.seFaireExtorquer();
-//		marco.recevoir(15);
-//		marco.boire();
-//		
+		yakuLeNoir.direBonjour();
+		yakuLeNoir.extorquer(marco);
+		
+		roro.direBonjour();
+		roro.donner(marco);
+		
+		roro.provoquer(yakuLeNoir);
+
+		
 //_______________________________________________________ premier test
 //		Humain prof = new Humain("Prof", "kombucha", 54);
 //		prof.direBonjour();
